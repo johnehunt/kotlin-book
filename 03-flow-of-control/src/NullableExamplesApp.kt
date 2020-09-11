@@ -35,4 +35,7 @@ fun main() {
 //    val l5 = nullableVar!!.length
 //    println(l3)
 
+    val total: Int? = null
+    println(total as? Int)
+
 }
