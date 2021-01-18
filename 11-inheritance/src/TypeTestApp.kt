@@ -1,6 +1,6 @@
 fun main() {
-    //val any: Any = "Hello"
-    val any: Any = 43.5
+    val any: Any = "Hello"
+    // val any: Any = 43.5
     if (any is String) {
         println("any contains a String")
         println(any.length)
