@@ -13,4 +13,5 @@ fun main(args: Array<String>) {
     if (d === Direction.NORTH) {
         println("We are heading North")
     }
+    println(d < Direction.SOUTH)
 }

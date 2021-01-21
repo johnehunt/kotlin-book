@@ -5,8 +5,6 @@ enum class CompassDirections(val bearing: Int) {
 }
 
 fun main() {
-    val directions = CompassDirections.values()
-    println("directions.size: ${directions.size}")
     val d = CompassDirections.WEST
     when (d) {
         CompassDirections.WEST -> println("Heading " + d.bearing)
