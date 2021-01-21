@@ -3,9 +3,9 @@ package interfaces
 interface Workers {
     fun doWork()
 }
-interface Employers {
+interface Employers: Cloneable {
     fun printSelf()
 }
-interface Records : Workers, Employers, Cloneable {
+interface Records : Workers, Employers {
     fun doSomething()
 }

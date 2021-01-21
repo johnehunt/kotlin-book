@@ -6,6 +6,7 @@ class Employee : Speaker, Translator {
     }
 
     override fun sayHello() {
+//        println("Employee - sayHello()")
         super<Speaker>.sayHello()
     }
 }
