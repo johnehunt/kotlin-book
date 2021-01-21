@@ -15,11 +15,10 @@ class Calendar(override val owner: String) : Organizer {
 }
 
 object Diary : Organizer {
-    override val owner: String
-        get() = "John"
+    override val owner: String = "John"
 
     override fun add(appointment: String, date: String) {
-        println("add")
+        println("add $appointment - $date")
     }
 
     override fun get(date: String): String? {
@@ -38,4 +37,7 @@ fun main() {
     cal.add("Dentist", "Monday")
     val org: Organizer = cal
     org.add("Garage", "Tuesday")
+    Diary.add("Opticians", "Wednesday")
+    val diary: Organizer = Diary
+    diary.add("Doctors", "Thursday")
 }
