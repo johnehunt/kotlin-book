@@ -13,6 +13,7 @@ fun main() {
     }
     println(r2)
     println(r2.isFailure)
+    println(r2.exceptionOrNull())
 
     val result0 = runCatching {
         "32".toInt()
@@ -21,13 +22,21 @@ fun main() {
 
     val result1 = runCatching {
         "32a".toInt()
-    }.getOrElse { 0 }
+    }.getOrElse {
+        println(it)
+        0
+    }
     println("result1 $result1")
 
     val result2 = runCatching {
         "32a".toInt()
     }.getOrNull()
     println("result2 $result2")
+
+    val result3 = runCatching {
+        "32".toInt()
+    }.getOrThrow()
+    println("result3: $result3")
 
     runCatching { "32".toInt() }
         .map { println(it) }
@@ -36,7 +45,9 @@ fun main() {
         .map { println(it) }
 
     runCatching { "32a".toInt() }
-        .recover { -1 }
+        .recover {
+            it.printStackTrace()
+            -1 }
         .map { println(it) }
 
     runCatching {
