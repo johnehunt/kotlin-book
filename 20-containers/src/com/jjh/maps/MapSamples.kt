@@ -52,7 +52,6 @@ fun main() {
     println(cities.values)
     println(cities.keys)
 
-
     println("---------")
 
     for (key in map.keys) {
