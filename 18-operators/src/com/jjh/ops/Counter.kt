@@ -35,7 +35,4 @@ fun main() {
     count *= 3
     println(count)
 
-    count+= Counter(1)
-
-
 }
