@@ -26,3 +26,6 @@ bin-release/
 /25-reactive-rxkotlin/gradle/wrapper/
 /27-rxkotlin-operators/gradle/
 /27-rxkotlin-operators/.gradle/
+/26-rxkotlin-flowables-and-concurrency/.gradle/
+/26-rxkotlin-flowables-and-concurrency/build/kotlin/compileKotlin/
+/26-rxkotlin-flowables-and-concurrency/gradle/wrapper/
