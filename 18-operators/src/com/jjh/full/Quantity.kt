@@ -1,7 +1,5 @@
 package com.jjh.full
 
-import com.jjh.ops.Counter
-
 data class Quantity(val value: Int) {
     operator fun plus(other: Quantity): Quantity = Quantity(value + other.value)
     operator fun minus(other: Quantity): Quantity = Quantity(value - other.value)
