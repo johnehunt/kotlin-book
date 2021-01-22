@@ -1,5 +1,7 @@
 package com.jjh.full
 
+import com.jjh.ops.Counter
+
 data class Quantity(val value: Int) {
     operator fun plus(other: Quantity): Quantity = Quantity(value + other.value)
     operator fun minus(other: Quantity): Quantity = Quantity(value - other.value)
@@ -8,7 +10,11 @@ data class Quantity(val value: Int) {
     operator fun div(i: Int): Quantity = Quantity(value / i)
     operator fun rem(i: Int): Quantity = Quantity(value % i)
 
-    fun compareTo(other: Quantity): Int = value.compareTo(other.value)
+    operator fun compareTo(other: Quantity): Int = value.compareTo(other.value)
+
+    operator fun inc(): Quantity = Quantity(value + 1)
+    operator fun dec(): Quantity = Quantity(value - 1)
+
 }
 
 fun main() {
@@ -22,4 +28,12 @@ fun main() {
     println("q2 / 2 = ${q2 / 2}")
     println("q2 % 3 = ${q2 % 3}")
 
+    println("--------------------")
+
+    println("q1 < q2: ${q1 < q2}")
+    println("q1 < q2: ${q1 <= q2}")
+    println("q1 < q2: ${q1 == q2}")
+    println("q1 < q2: ${q1 != q2}")
+    println("q1 < q2: ${q1 > q2}")
+    println("q1 < q2: ${q1 >= q2}")
 }
