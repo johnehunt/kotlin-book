@@ -32,3 +32,4 @@ bin-release/
 /06-higher-order-functions/.gradle/
 /06-higher-order-functions/gradle/wrapper/
 /06-higher-order-functions/build/kotlin/compileKotlin/
+/27-rxkotlin-operators/build/kotlin/compileKotlin/
