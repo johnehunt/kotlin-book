@@ -29,3 +29,6 @@ bin-release/
 /26-rxkotlin-flowables-and-concurrency/.gradle/
 /26-rxkotlin-flowables-and-concurrency/build/kotlin/compileKotlin/
 /26-rxkotlin-flowables-and-concurrency/gradle/wrapper/
+/06-higher-order-functions/.gradle/
+/06-higher-order-functions/gradle/wrapper/
+/06-higher-order-functions/build/kotlin/compileKotlin/
