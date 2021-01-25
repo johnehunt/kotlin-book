@@ -24,10 +24,25 @@ fun main(args: Array<String>) {
         .filter {it % 2 == 0}
         .subscribe{println(it)}
 
+    // Use distinct to suppress duplicates
+    listOf(2, 3, 5, 2, 4, 3, 2)
+        .toObservable()
+        .distinct()
+        .subscribe{println("received: $it")}
+
+
     listOf(2, 3, 5, 7, 4, 9, 8)
         .toObservable()
         .count()
-        .map { println("count: $it") }
+        .toFlowable()
+        .subscribe{println("count: $it")}
+
+
+    listOf(2, 3, 5, 7, 4, 9, 8)
+        .toObservable()
+        .reduce(0){total, value -> total + value}
+        .toFlowable()
+        .subscribe{println("Total: $it")}
 
     // chain operators
 
