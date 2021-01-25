@@ -34,14 +34,14 @@ fun main(args: Array<String>) {
     listOf(2, 3, 5, 7, 4, 9, 8)
         .toObservable()
         .count()
-        .toFlowable()
+        .toObservable()
         .subscribe{println("count: $it")}
 
 
     listOf(2, 3, 5, 7, 4, 9, 8)
         .toObservable()
         .reduce(0){total, value -> total + value}
-        .toFlowable()
+        .toObservable()
         .subscribe{println("Total: $it")}
 
     // chain operators
