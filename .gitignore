@@ -29,3 +29,5 @@ bin-release/
 /28-rxkotlin-operators/.gradle/
 /28-rxkotlin-operators/build/kotlin/compileKotlin/
 /28-rxkotlin-operators/gradle/wrapper/
+/26-reactive-rxkotlin/.gradle/
+/26-reactive-rxkotlin/gradle/wrapper/
