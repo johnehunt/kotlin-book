@@ -22,14 +22,10 @@ bin-release/
 
 /.gradle
 /gradle/
-/25-reactive-rxkotlin/.gradle/
-/25-reactive-rxkotlin/gradle/wrapper/
-/27-rxkotlin-operators/gradle/
-/27-rxkotlin-operators/.gradle/
-/26-rxkotlin-flowables-and-concurrency/.gradle/
-/26-rxkotlin-flowables-and-concurrency/build/kotlin/compileKotlin/
-/26-rxkotlin-flowables-and-concurrency/gradle/wrapper/
-/06-higher-order-functions/.gradle/
-/06-higher-order-functions/gradle/wrapper/
-/06-higher-order-functions/build/kotlin/compileKotlin/
-/27-rxkotlin-operators/build/kotlin/compileKotlin/
+
+/27-rxkotlin-flowables-and-concurrency/.gradle/
+/27-rxkotlin-flowables-and-concurrency/build/kotlin/compileKotlin/
+/27-rxkotlin-flowables-and-concurrency/gradle/wrapper/
+/28-rxkotlin-operators/.gradle/
+/28-rxkotlin-operators/build/kotlin/compileKotlin/
+/28-rxkotlin-operators/gradle/wrapper/
