@@ -24,16 +24,33 @@ fun main() {
         this.id = "123"
         game = "Nightfall"  // can reference this implicitly
     }
-    println("${user.id} ${user.name}")
+    println("user: $user")
+
+    // Illustrates typical use of the run scope function
+    user.run{
+        print("Please input the users favourite game: ")
+        val favouriteGame: String ? = readLine()
+        game = favouriteGame ?: ""
+    }
+    println("user: $user")
+
+    user.game = "Nightfall"
 
     // Use let to execute 1 or more operations on an object
     // let lambda returns a result
-    val s = "Hello World"
-    val s2 = s.let { it.toUpperCase() }
-    val s3 = s.let {
+    val s2 = user.let { it.name.toUpperCase() }
+    println("s2 $s2")
+    val s3 = user.let {
         println(it)
-        it.toUpperCase()
+        println(it.name)
+        it.name.toUpperCase()
     }
+    println("s3 $s3")
+
+    val r1 = user.name.let{
+        name -> name.toUpperCase()
+    }
+    println("r1: $r1")
 
     // with - allows sequence of operations to be written all
     // relating to the object passed to it. Avoid repeatedly
@@ -48,7 +65,19 @@ fun main() {
 
     // Receiver Instance bound to it, returns bound
     // instance as result
-    val user2 = user.also { println(it) }
+    val user2 = User("John").also {
+        println(it)
+        it.id = "456"
+        it.game = "Monopoly"
+    }
+    println("user2: $user2")
+
+    val user3 = User("John").also {u ->
+        println(u)
+        u.id = "456"
+        u.game = "Monopoly"
+    }
+    println("user3: $user3")
 
     // 'run' binds receiver to this returns result of lambda
     // can reference this directly
