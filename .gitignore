@@ -31,3 +31,14 @@ bin-release/
 /28-rxkotlin-operators/gradle/wrapper/
 /26-reactive-rxkotlin/.gradle/
 /26-reactive-rxkotlin/gradle/wrapper/
+/25-coroutines/.gradle/
+/25-coroutines/build/kotlin/compileKotlin/
+/25-coroutines/gradle/wrapper/
+/27-reactive-rxkotlin/.gradle/
+/27-reactive-rxkotlin/gradle/wrapper/
+/29-rxkotlin-operators/.gradle/
+/29-rxkotlin-operators/build/kotlin/compileKotlin/
+/29-rxkotlin-operators/gradle/wrapper/
+/28-rxkotlin-flowables-and-concurrency/.gradle/
+/28-rxkotlin-flowables-and-concurrency/build/kotlin/compileKotlin/
+/28-rxkotlin-flowables-and-concurrency/gradle/wrapper/
