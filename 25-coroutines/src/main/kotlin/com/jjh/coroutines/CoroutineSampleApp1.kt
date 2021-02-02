@@ -6,17 +6,18 @@ import kotlinx.coroutines.launch
 
 fun main() {
 
-    println("Launching fire-and-forget task")
+    println("Main -> Launching fire-and-forget task")
+
     GlobalScope.launch {
-        println("---> Starting Task")
+        println("coroutine ---> Starting Task")
         delay(5000)
-        println("---> Done Task")
+        println("coroutine ---> Done Task")
     }
     println("---------------------------------")
-    println("After launching coroutine")
-    println("Waiting for task - press enter to continue:")
+    println("Main -> After launching coroutine")
+    println("Main -> Waiting for task - press enter to continue:")
     readLine()
     println("---------------------------------")
-    println("Done")
+    println("Main -> Done")
 }
 
