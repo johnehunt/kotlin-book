@@ -46,6 +46,8 @@ fun main() {
     println("Main -> After launching coroutines")
     println("Main -> Waiting for task - press enter to continue:")
     readLine()
+    channel1.close()
+    channel2.close()
     println("Main -> Done")
 
 }
