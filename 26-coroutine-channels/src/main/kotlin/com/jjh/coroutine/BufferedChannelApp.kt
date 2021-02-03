@@ -30,5 +30,6 @@ fun main() {
     println("Main -> After launching coroutines")
     println("Main -> Waiting for tasks - press Enter to Terminate:")
     readLine()
+    channel.close()
     println("Main -> Done")
 }
