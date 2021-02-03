@@ -26,7 +26,7 @@ fun main() {
         }
     }
 
-    println("Main -> Launching rendezvous channel task")
+    println("Main -> Launching Unlimited channel task")
     GlobalScope.launch { sendDataToChannelTask() }
     GlobalScope.launch { receiveDataFromChannelTask() }
     println("Main -> After launching coroutines")
