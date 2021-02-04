@@ -9,7 +9,7 @@ fun checkIsPrimeNumber(num: Int): Boolean {
     return true
 }
 
-fun generatePrimeNumberOberservable(maxNumber: Int) =
+fun generatePrimeNumberOberservable(maxNumber: Int): Observable<Int> =
     Observable.create<Int> { emitter ->
         var currentNumber = 0
         while (currentNumber < maxNumber) {
