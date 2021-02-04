@@ -3,7 +3,7 @@ package com.jjh.react
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.schedulers.Schedulers
 
-fun main(args: Array<String>) {
+fun main() {
     Flowable.fromCallable {
         Thread.sleep(1000) //  imitate expensive computation
         "Done"
