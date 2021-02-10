@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
+    // Initial testView using Kotlin extensions
     textView.text = "Total: ${count.toString()}"
   }
 }
