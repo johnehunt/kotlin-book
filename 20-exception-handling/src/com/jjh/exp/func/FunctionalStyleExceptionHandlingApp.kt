@@ -36,7 +36,7 @@ fun main() {
     val result3 = runCatching {
         "32".toInt()
     }.getOrThrow()
-    println("result3: $result3")
+    println("result3 $result3")
 
     runCatching { "32".toInt() }
         .map { println(it) }
