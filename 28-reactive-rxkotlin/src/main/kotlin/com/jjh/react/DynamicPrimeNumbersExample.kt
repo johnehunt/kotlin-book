@@ -26,4 +26,13 @@ fun main() {
         .subscribe{print("$it, ")}
     println()
 
+    generatePrimeNumberObservable(11)
+        .doOnNext { println("doOnNext($it)") }
+        .doOnComplete{println("doOnComplete()")}
+        .doOnError { println("doOnError($it)") }
+        .doFinally { println("doFinally()") }
+        .doOnSubscribe { println("doOnSubscribe($it)") }
+        .subscribe{print("$it, ")}
+    println()
+
 }
