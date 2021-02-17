@@ -9,4 +9,6 @@ fun main() {
 
     // Subscribe a simple lambda function
     observable.subscribeBy { print("$it, ") }
+    // Alternatively use
+    // observable.subscribe { print("$it, ") }
 }
