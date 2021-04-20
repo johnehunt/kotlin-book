@@ -19,7 +19,7 @@ class Service(val url: String) {
 fun main() {
     // Use apply for code blocks that return
     // the bound instance and (typically) configure
-    // the instance.
+    // the instance. Typically used to set up an instance
     val user = User("John").apply {
         this.id = "123"
         game = "Nightfall"  // can reference this implicitly
