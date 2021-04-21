@@ -1,7 +1,8 @@
 package com.midmarsh.inner
 
 enum class DaysOfWeek {
-    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY;
+
     object Util {
         const val DAY_TOTAL = 5
     }
@@ -11,4 +12,9 @@ enum class DaysOfWeek {
     interface Printable {
         fun convert(): String?
     }
+}
+
+fun main() {
+    val d = DaysOfWeek.FRIDAY
+    println(d)
 }

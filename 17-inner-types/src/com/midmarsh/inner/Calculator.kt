@@ -14,9 +14,19 @@ class Calculator(private val value: Int) {
         }
     }
 
+    val p = object {
+        val x = 10
+        val y = value
+    }
+
     val worker: Worker
         get() = Worker(count++)
 
+}
+
+enum class Weekend {
+    SATURDAY, SUNDAY;
+    inner class Printer {}
 }
 
 fun main() {
