@@ -24,8 +24,8 @@ fun main() {
     // copying
 
     ship1.image = "default.png"
-    println("ship: $ship1")
-    println("ship.image: ${ship1.image}")
+    println("ship1: $ship1")
+    println("ship1.image: ${ship1.image}")
     val otherShip = ship1.copy(x = 20.0)
     println("othership: $otherShip")
     println("otherShip.image: ${otherShip.image}")
