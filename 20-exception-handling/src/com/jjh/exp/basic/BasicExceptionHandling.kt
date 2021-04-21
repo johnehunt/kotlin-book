@@ -1,7 +1,5 @@
 package com.jjh.exp.basic
 
-import java.lang.ArithmeticException
-
 fun runcalc(x: Int){
     x / 0
 }
