@@ -1,7 +1,7 @@
 package com.jjh.exp.people
 
 class InvalidAgeException(val invalidAge: Int,
-                           _message: String) : Exception(_message)
+                           message: String) : Exception(message)
 
 class Person(val name: String, _age: Int) {
 
