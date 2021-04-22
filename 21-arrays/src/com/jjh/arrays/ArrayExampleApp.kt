@@ -8,6 +8,8 @@ fun main() {
     val asc = Array(5) { i -> (i * i).toString() }
 
     // Create some empty arrays
+    val someStrings = emptyArray<String>()
+    val friends = emptyArray<Person>()
     val anything: Array<Any> = emptyArray()
     val modules: Array<String> = emptyArray()
     val data = arrayOf<String>()
