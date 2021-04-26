@@ -36,7 +36,7 @@ class Account(
 
 fun main() {
     val acc1 = Account("123", "John", 10.05, "current")
-    val acc2 = Account("345", "John", 23.55, "savings")
+    val acc2 = Account("345", "Denise", 23.55, "savings")
     val acc3 = Account("567", "Phoebe", 12.45, "investment")
 
     println(acc1)
