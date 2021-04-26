@@ -50,7 +50,7 @@ abstract class AbstractAccount(
 
 }
 
-class CurrentAbstractAccount(accountNumber: String,
+class CurrentAccount(accountNumber: String,
                              holder: String,
                              openingBalance: Double,
                              val overdraftLimit: Double) : AbstractAccount(accountNumber, holder, openingBalance) {
@@ -69,7 +69,7 @@ class CurrentAbstractAccount(accountNumber: String,
 
 }
 
-class DepositAbstractAccount(accountNumber: String,
+class DepositAccount(accountNumber: String,
                              holder: String,
                              openingBalance: Double,
                              val interestRate: Double): AbstractAccount(accountNumber, holder, openingBalance) {
@@ -80,7 +80,7 @@ class DepositAbstractAccount(accountNumber: String,
 
 }
 
-class InvestmentAbstractAccount(accountNumber: String,
+class InvestmentAccount(accountNumber: String,
                                 holder: String,
                                 openingBalance: Double,
                                 val type: InvestmentAccountTypes): AbstractAccount(accountNumber, holder, openingBalance) {

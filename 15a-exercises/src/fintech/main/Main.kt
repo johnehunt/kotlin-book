@@ -3,9 +3,9 @@ package fintech.main
 import fintech.accounts.*
 
 fun main() {
-    val acc1 = CurrentAbstractAccount("123", "John", 10.05, -100.00)
-    val acc2 = DepositAbstractAccount("345", "Denise", 23.55, 0.5)
-    val acc3 = InvestmentAbstractAccount("567", "Phoebe", 12.45, InvestmentAccountTypes.HighRisk)
+    val acc1 = CurrentAccount("123", "John", 10.05, -100.00)
+    val acc2 = DepositAccount("345", "Denise", 23.55, 0.5)
+    val acc3 = InvestmentAccount("567", "Phoebe", 12.45, InvestmentAccountTypes.HighRisk)
 
     println(acc1)
     println(acc2)
