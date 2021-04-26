@@ -13,13 +13,12 @@ fun main() {
         var foundNumber = false
         var keepPlaying = true
 
-        print("Please guess a number between 1 and 10: ")
         while (keepPlaying) {
+            print("Please guess a number between 1 and 10: ")
             val guess = readLine() ?: ""
             // Check to see if the user entered 'cheat mode'
             if (guess == "-1") {
                 println("Cheat Mode: The number to guess is $numberToGuess")
-                print("Please guess again between 1 and 10: ")
             } else {
                 countNumberOfTries++
                 val intGuess = guess.toInt()
@@ -37,7 +36,6 @@ fun main() {
                     } else {
                         println("Your guess was higher than the number")
                     }
-                    print("Please guess again between 1 and 10: ")
                 } else {
                     keepPlaying = false
                     foundNumber = true
