@@ -48,7 +48,7 @@ abstract class AbstractAccount(
 
 }
 
-class CurrentAbstractAccount(accountNumber: String,
+class CurrentAccount(accountNumber: String,
                              holder: String,
                              openingBalance: Double,
                              val overdraftLimit: Double) : AbstractAccount(accountNumber, holder, openingBalance) {
@@ -67,7 +67,7 @@ class CurrentAbstractAccount(accountNumber: String,
 
 }
 
-class DepositAbstractAccount(accountNumber: String,
+class DepositAccount(accountNumber: String,
                              holder: String,
                              openingBalance: Double,
                              val interestRate: Double): AbstractAccount(accountNumber, holder, openingBalance) {
@@ -78,7 +78,7 @@ class DepositAbstractAccount(accountNumber: String,
 
 }
 
-class InvestmentAbstractAccount(accountNumber: String,
+class InvestmentAccount(accountNumber: String,
                                 holder: String,
                                 openingBalance: Double,
                                 val type: InvestmentAccountTypes): AbstractAccount(accountNumber, holder, openingBalance) {
@@ -90,9 +90,9 @@ class InvestmentAbstractAccount(accountNumber: String,
 }
 
 fun main() {
-    val acc1 = CurrentAbstractAccount("123", "John", 10.05, -100.00)
-    val acc2 = DepositAbstractAccount("345", "Denise", 23.55, 0.5)
-    val acc3 = InvestmentAbstractAccount("567", "Phoebe", 12.45, InvestmentAccountTypes.HighRisk)
+    val acc1 = CurrentAccount("123", "John", 10.05, -100.00)
+    val acc2 = DepositAccount("345", "Denise", 23.55, 0.5)
+    val acc3 = InvestmentAccount("567", "Phoebe", 12.45, InvestmentAccountTypes.HighRisk)
 
     println(acc1)
     println(acc2)
