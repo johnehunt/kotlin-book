@@ -1,13 +1,12 @@
 import kotlin.random.Random
 
-val numberToGuess = Random.nextInt(0, 11)
-
 fun main() {
 
     var gameOver = false
     println("Welcome to the number guess game")
 
     while (!gameOver) {
+        val numberToGuess = Random.nextInt(0, 11)
         var countNumberOfTries = 0
 
         var foundNumber = false
