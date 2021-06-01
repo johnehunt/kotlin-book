@@ -17,7 +17,7 @@ fun main() {
         if (countNumberOfTries == 4) {
             break
         } else if (intGuess < numberToGuess) {
-            println("You guess was lower than the number")
+            println("Your guess was lower than the number")
         } else {
             println("Your guess was higher than the number")
         }
