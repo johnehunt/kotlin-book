@@ -1,8 +1,8 @@
-package com.midmarsh.inner
+package com.midmarsh.nested
 
 class Util {
 
-    // Top level nested class defined within the scope of Util namesapce
+    // Top level nested class defined within the scope of Util namespace
     class Printer {
         fun print(msg: String) {
             println(this.javaClass.name + " - " + msg)
