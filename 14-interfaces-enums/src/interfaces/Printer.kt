@@ -9,7 +9,7 @@ interface Printer {
     }
 
     companion object {
-        private val label = "Label"
+        private const val label = "Label"
 		fun printMe() {
             println("Printer - printMe")
         }
