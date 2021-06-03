@@ -43,9 +43,11 @@ fun main() {
     val cities = mutableMapOf(
         "Ireland" to "Dublin",
         "UK" to "London",
+        "Germany" to "Berlin",
         "France" to "Paris",
         "Spain" to "Madrid")
     // Mutable map operations
+    println("cities: $cities")
     cities.remove("Germany")
     println("cities: $cities")
 
